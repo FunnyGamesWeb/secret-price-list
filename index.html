@@ -33,34 +33,34 @@
     }
 
     h1 {
-  position: relative;
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin: 2rem auto;
-  color: #00c8ff;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 12px;
-  font-size: 2rem;
-  box-shadow: 0 0 20px rgba(0,200,255,0.4);
-  animation: pulse 3s infinite;
-}
+      position: relative;
+      display: inline-block;
+      padding: 1rem 2rem;
+      margin: 2rem auto;
+      color: #00c8ff;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      font-size: 2rem;
+      box-shadow: 0 0 20px rgba(0,200,255,0.4);
+      animation: pulse 3s infinite;
+      display: block;
+    }
 
-@keyframes pulse {
-  0%   { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
-  50%  { box-shadow: 0 0 30px rgba(0,200,255,0.7); }
-  100% { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
-}
-
+    @keyframes pulse {
+      0%   { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
+      50%  { box-shadow: 0 0 30px rgba(0,200,255,0.7); }
+      100% { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
+    }
 
     section {
-  max-width: 700px;
-  margin: 0 auto 3rem;
-  background: #1f1f1f;
-  padding: 1.5rem;
-  border-radius: 8px;
-}
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      background: transparent; /* Kein Viereck-Block mehr */
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
 
     section img {
       max-width: 150px;
@@ -96,11 +96,11 @@
     }
 
     tbody tr:nth-child(odd) {
-      background: #222;
+      background: rgba(34, 34, 34, 0.8);
     }
 
     tbody tr:nth-child(even) {
-      background: #2a2a2a;
+      background: rgba(42, 42, 42, 0.8);
     }
   </style>
 </head>
