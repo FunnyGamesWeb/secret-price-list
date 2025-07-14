@@ -22,8 +22,6 @@
     }
 
     h1 {
-      position: relative;
-      display: inline-block;
       padding: 1rem 2rem;
       margin: 2rem auto;
       color: #00c8ff;
@@ -31,8 +29,9 @@
       background: rgba(0, 0, 0, 0.6);
       border-radius: 12px;
       font-size: 2rem;
-      box-shadow: 0 0 20px rgba(0,200,255,0.4);
+      box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
       animation: pulse 3s infinite;
+      width: fit-content;
       display: block;
     }
 
@@ -131,14 +130,14 @@
 </head>
 
 <body>
-  <div class="particles-container"></div>
-  <h1>Secret Pets Price List</h1>
+  <div class="particles-container" aria-hidden="true"></div>
 
-  <!-- DEIN INHALT KOMMT HIER -->
+  <h1>Secret Pets Price List</h1>
 
   <script>
     const container = document.querySelector('.particles-container');
 
+    
     function createParticle() {
       const particle = document.createElement('div');
       particle.classList.add('particle');
@@ -152,15 +151,18 @@
 
       container.appendChild(particle);
 
+      
       setTimeout(() => {
         particle.remove();
       }, 4000);
     }
 
+    
     setInterval(createParticle, 200);
   </script>
 </body>
 </html>
+
 
 <section>
 
