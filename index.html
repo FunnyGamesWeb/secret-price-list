@@ -1,124 +1,109 @@
 <!DOCTYPE html>
-
 <html lang="de">
-
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Secret Pets Price List</title>
 
-<meta charset="UTF-8" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #eee;
+      min-height: 100vh;
+      position: relative;
+      z-index: 0;
+    }
 
-<title>Secret Pets Price List</title>
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2025/05/motorcycle-racing-codes.jpg');
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+    }
 
-<style>
+    .background::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+      height: 60%;
+      backdrop-filter: blur(10px);
+      z-index: -1;
+    }
 
-  body {
+    h1 {
+      text-align: center;
+      color: #00c8ff;
+      margin: 2rem 0;
+    }
 
-    background: #121212;
+    section {
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      background: rgba(31, 31, 31, 0.85);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
 
-    color: #eee;
+    section img {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto 1rem;
+      border-radius: 8px;
+    }
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    h2 {
+      margin-top: 0;
+      color: #00aaff;
+    }
 
-    margin: 0; padding: 2rem;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+    }
 
-  }
+    th, td {
+      border: 1px solid #333;
+      padding: 0.5rem 0.8rem;
+      text-align: center;
+    }
 
-  h1 {
+    th {
+      background: #005577;
+      color: #eee;
+    }
 
-    text-align: center;
+    td:first-child {
+      text-align: left;
+    }
 
-    color: #00c8ff;
+    tbody tr:nth-child(odd) {
+      background: #222;
+    }
 
-    margin-bottom: 2rem;
-
-  }
-
-  section {
-
-    max-width: 700px;
-
-    margin: 0 auto 3rem;
-
-    background: #1f1f1f;
-
-    padding: 1.5rem;
-
-    border-radius: 8px;
-
-  }
-
-  section img {
-
-    max-width: 150px;
-
-    display: block;
-
-    margin: 0 auto 1rem;
-
-    border-radius: 8px;
-
-  }
-
-  h2 {
-
-    margin-top: 0;
-
-    color: #00aaff;
-
-  }
-
-  table {
-
-    width: 100%;
-
-    border-collapse: collapse;
-
-    margin-top: 0.8rem;
-
-  }
-
-  th, td {
-
-    border: 1px solid #333;
-
-    padding: 0.5rem 0.8rem;
-
-    text-align: center;
-
-  }
-
-  th {
-
-    background: #005577;
-
-    color: #eee;
-
-  }
-
-  td:first-child {
-
-    text-align: left;
-
-  }
-
-  tbody tr:nth-child(odd) {
-
-    background: #222;
-
-  }
-
-  tbody tr:nth-child(even) {
-
-    background: #2a2a2a;
-
-  }
-
-</style>
-
+    tbody tr:nth-child(even) {
+      background: #2a2a2a;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="background"></div>
+
+  <h1>Secret Pets Price List</h1>
   
 <section>
 
@@ -413,3 +398,6 @@
     </tbody>
   </table>
 </section>
+
+  </body>
+</html>
