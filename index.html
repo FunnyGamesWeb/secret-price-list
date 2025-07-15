@@ -98,20 +98,6 @@
     tbody tr:nth-child(even) {
       background: #2a2a2a;
     }
-
-<input type="text" id="search" placeholder="Pet Searching" onkeyup="searchTable()" />
-
-<script>
-  function searchTable() {
-    const input = document.getElementById("search").value.toLowerCase();
-    const rows = document.querySelectorAll("tbody tr");
-
-    rows.forEach(row => {
-      row.style.display = row.textContent.toLowerCase().includes(input) ? "" : "none";
-    });
-  }
-</script>
-    
   </style>
 </head>
 
@@ -407,5 +393,17 @@
   </table>
 </section>
 
+<script>
+  function searchTable() {
+    const input = document.getElementById("search").value.toLowerCase();
+    const rows = document.querySelectorAll("tbody tr");
+
+    rows.forEach(row => {
+      const variant = row.cells[0].textContent.toLowerCase();
+      row.style.display = variant.includes(input) ? "" : "none";
+    });
+  }
+</script>
+  
   </body>
 </html>
