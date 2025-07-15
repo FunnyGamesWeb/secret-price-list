@@ -102,16 +102,6 @@
 </head>
 
 <body>
-
-<div style="text-align: center; margin: 2rem;">
-  <input
-    type="text"
-    id="search"
-    oninput="searchPets()"
-    placeholder="Search Pet"
-    style="padding: 0.5rem 1rem; width: 300px; font-size: 1rem; border-radius: 8px; border: none; outline: none;"
-  />
-</div>
   
 <section>
   <h2>Darkwing Overlord</h2>
@@ -402,29 +392,6 @@
     </tbody>
   </table>
 </section>
-
-<script>
-  function searchPets() {
-    const input = document.getElementById("search").value.toLowerCase();
-    const sections = document.querySelectorAll("section");
-
-    sections.forEach(section => {
-      const title = section.querySelector("h2")?.textContent.toLowerCase() || "";
-      const rows = section.querySelectorAll("tbody tr");
-      let found = false;
-
-      rows.forEach(row => {
-        const variant = row.cells[0].textContent.toLowerCase();
-        const value = row.cells[1].textContent.toLowerCase();
-        const matches = variant.includes(input) || value.includes(input) || title.includes(input);
-        row.style.display = matches ? "" : "none";
-        if (matches) found = true;
-      });
-
-      section.style.display = found || title.includes(input) ? "" : "none";
-    });
-  }
-</script>
   
   </body>
 </html>
