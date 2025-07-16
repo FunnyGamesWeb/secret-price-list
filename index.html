@@ -4,104 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Secret Pets Price List</title>
-
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #121212;
+      background-color: #121212;
       color: #eee;
-      min-height: 100vh;
-      overflow-x: hidden;
-      position: relative;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      text-align: center;
     }
 
     h1 {
-      position: relative;
-      padding: 1rem 2rem;
-      margin: 2rem auto;
       color: #00c8ff;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 12px;
-      font-size: 2rem;
-      box-shadow: 0 0 20px rgba(0,200,255,0.4);
-      animation: pulse 3s infinite;
-      width: fit-content;
-      display: block;
-      overflow: visible;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
 
-    @keyframes pulse {
-      0%   { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
-      50%  { box-shadow: 0 0 30px rgba(0,200,255,0.7); }
-      100% { box-shadow: 0 0 20px rgba(0,200,255,0.4); }
-    }
-
-    section {
-      max-width: 700px;
-      margin: 0 auto 3rem;
-      background: #1f1f1f;
-      padding: 1.5rem;
-      border-radius: 8px;
-    }
-
-    section img {
-      max-width: 150px;
-      display: block;
-      margin: 0 auto 1rem;
-      border-radius: 8px;
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #00c8ff;
-      font-weight: bold;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.4);
-      padding: 0.5rem 1rem;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 200, 255, 0.4);
-      animation: pulse 3s infinite;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 0.8rem;
-    }
-
-    th, td {
-      border: 1px solid #333;
-      padding: 0.5rem 0.8rem;
-      text-align: center;
-    }
-
-    th {
-      background: #005577;
+    #searchInput {
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 6px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1rem;
+      background-color: #1f1f1f;
       color: #eee;
+      border: 1px solid #333;
     }
 
-    td:first-child {
-      text-align: left;
-    }
-
-    tbody tr:nth-child(odd) {
-      background: #222;
-    }
-
-    tbody tr:nth-child(even) {
-      background: #2a2a2a;
+    #searchInput:focus {
+      outline: none;
+      border-color: #00c8ff;
+      box-shadow: 0 0 10px #00c8ff;
     }
   </style>
 </head>
-
 <body>
+  <h1>Secret Pets Price List</h1>
+
+  <input type="text" id="searchInput" placeholder="🔍 Secret suchen..." />
+
   
 <section>
   <h2>Darkwing Overlord</h2>
